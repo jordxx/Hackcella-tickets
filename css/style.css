@@ -1033,6 +1033,111 @@ a:active {
   .event-list {
     margin-top: 12vh;
   }
+
+  /* TICKET RESPONSIVE */
+  .card-container {
+    height: 38vh;
+    margin-top: 60vh;
+  }
+
+  .card-body h1 {
+    font-size: 25px;
+  }
+
+  .card-body p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .card-body h3 {
+    font-size: 12px;
+  }
+
+  .price {
+    margin-top: 2vw;
+  }
+
+  .card-body .gold {
+    font-size: 20px;
+  }
+  .regroup {
+    margin-top: 2vh;
+  }
+  .get-now {
+    height: 3vw;
+  }
+  .col-price {
+    width: 5vw;
+  }
+  .col-price h1 {
+    margin-top: 1.5vh;
+    font-size: 15px;
+  }
+  .get-now h3 {
+    margin-top: 1vh;
+    font-size: 16px;
+  }
+  /*CARD 2 */
+  .card-container .card-body-1 {
+    padding: 3vw;
+  }
+
+  .card-container .card-body-1 h1 {
+    font-size: 25px;
+  }
+
+  .card-container .card-body-1 p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .card-container .card-body-1 h3 {
+    font-size: 12px;
+  }
+
+  .card-container .card-body-1 .gold {
+    font-size: 20px;
+  }
+  .card-container .regroup {
+    margin-top: 2vh;
+  }
+  .card-container .get-now-1 {
+    height: 3vw;
+  }
+
+  .card-container .col-price h1 {
+    margin-top: 1.5vh;
+    font-size: 15px;
+  }
+  .card-container .get-now-1 h3 {
+    margin-top: 1vh;
+    font-size: 16px;
+  }
+  /* card 2 */
+  .card-container .card-body-2 {
+    padding: 3vw;
+  }
+
+  .card-body-2 h1 {
+    font-size: 25px;
+  }
+
+  .card-container .card-body-2 p {
+    text-align: justify;
+    font-size: 25px;
+  }
+
+  .card-container .card-body-2 h3 {
+    font-size: 12px;
+  }
+
+  .card-container .card-body-2 .gold {
+    font-size: 25px;
+  }
+
+  .card-container .regroup .get-now-2 {
+    height: 3vw;
+  }
 }
 
 .gold {
@@ -1123,12 +1228,12 @@ a:active {
 }
 
 .card-container .card-body-2 h1 {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .card-container .card-body-2 p {
   text-align: justify;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .card-container .card-body-2 h3 {
@@ -1140,7 +1245,7 @@ a:active {
 }
 
 .card-container .card-body-2 .gold {
-  font-size: 14px;
+  font-size: 22px;
 }
 .card-container .regroup {
   margin-top: 2vh;
@@ -1161,5 +1266,3 @@ a:active {
 }
 
 /* Card Finished */
-
-
