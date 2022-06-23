@@ -104,6 +104,54 @@ a:active {
 }
 /***************************** NAV *****************************/
 
+.button{
+  border: 1px solid rgba(240, 0, 0, 0.8);
+  color: red;
+  padding: 10px;
+  border-radius: 7px;
+  font-family: serif;
+}
+
+.button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 130px 500px auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  align-self: center;
+}
+
+.tanggal{
+  font-size: small;
+}
+
+.center{
+  text-align: -webkit-center;
+}
+
+.event-list{
+  width: fit-content;
+  text-align: left;
+  padding: 24px;
+}
+
+.description{
+  opacity: .5!important;
+}
+
+.card{
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+}
+
 /***************************** WRAPPER *****************************/
 #slidy {
   height: 850px;
