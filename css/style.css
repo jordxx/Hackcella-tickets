@@ -694,6 +694,49 @@ a:active {
     margin-top: 1vh;
     font-size: 16px;
   }
+  /* card 2 */
+  .card-container .card-body-2 {
+    padding: 3vw;
+  }
+
+  .card-container .card-body-2 h1 {
+    font-size: 18px;
+  }
+
+  .card-container .card-body-2 p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .card-container .card-body-2 h3 {
+    font-size: 12px;
+  }
+
+  .card-container .price {
+    margin-top: 2vw;
+  }
+
+  .card-container .card-body-2 .gold {
+    font-size: 14px;
+  }
+
+  .card-container .regroup {
+    margin-top: 2vh;
+  }
+  .card-container .get-now-2 {
+    height: 5.4vw;
+  }
+  .card-container .col-price {
+    width: 5vw;
+  }
+  .card-container .col-price h1 {
+    margin-top: 1.5vh;
+    font-size: 15px;
+  }
+  .card-container .get-now-2 h3 {
+    margin-top: 1vh;
+    font-size: 16px;
+  }
   /* TICKET RESPONSIVE */
 }
 
@@ -860,6 +903,48 @@ a:active {
     font-size: 15px;
   }
   .card-container .get-now-1 h3 {
+    margin-top: 1vh;
+    font-size: 16px;
+  }
+  /*card 2 */
+  .card-container .card-body-2 {
+    padding: 3vw;
+  }
+
+  .card-container .card-body-2 h1 {
+    font-size: 22px;
+  }
+
+  .card-container .card-body-2 p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .card-container .card-body-2 h3 {
+    font-size: 12px;
+  }
+
+  .card-container .price {
+    margin-top: 2vw;
+  }
+
+  .card-container .card-body-2 .gold {
+    font-size: 20px;
+  }
+  .card-container .regroup {
+    margin-top: 2vh;
+  }
+  .card-container .get-now-2 {
+    height: 5.4vw;
+  }
+  .card-container .col-price {
+    width: 5vw;
+  }
+  .card-container .col-price h1 {
+    margin-top: 1.5vh;
+    font-size: 15px;
+  }
+  .card-container .get-now-2 h3 {
     margin-top: 1vh;
     font-size: 16px;
   }
@@ -1030,6 +1115,51 @@ a:active {
 .get-now-2:hover {
   background-color: orange;
 }
+
+/* car2 */
+
+.card-container .card-body-2 {
+  padding: 3vw;
+}
+
+.card-container .card-body-2 h1 {
+  font-size: 18px;
+}
+
+.card-container .card-body-2 p {
+  text-align: justify;
+  font-size: 12px;
+}
+
+.card-container .card-body-2 h3 {
+  font-size: 12px;
+}
+
+.card-container .price {
+  margin-top: 2vw;
+}
+
+.card-container .card-body-2 .gold {
+  font-size: 14px;
+}
+.card-container .regroup {
+  margin-top: 2vh;
+}
+.card-container .get-now-2 {
+  height: 5.4vw;
+}
+.card-container .col-price {
+  width: 5vw;
+}
+.card-container .col-price h1 {
+  margin-top: 1.5vh;
+  font-size: 15px;
+}
+.card-container .get-now-2 h3 {
+  margin-top: 1vh;
+  font-size: 16px;
+}
+
 /* Card Finished */
 
 
