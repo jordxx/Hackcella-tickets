@@ -401,7 +401,7 @@ a:active {
   width: 100vw;
   height: 115vh;
   padding-top: 10vh;
-  background-color: #FAF3E3;
+  background-color: #faf3e3;
 }
 
 .flex-content {
@@ -499,7 +499,7 @@ a:active {
 .col-price {
   width: 5vw;
   text-align: center;
-  background-color: gray;
+  background-color: black;
   border-radius: 5px 0px 0px 5px;
 }
 .col-price h1 {
@@ -604,6 +604,55 @@ a:active {
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  /* TICKET RESPONSIVE */
+  .card-body {
+    padding: 3vw 3vw;
+  }
+
+  .card-container {
+    height: 30vh;
+    margin-top: 8vh;
+  }
+
+  .card-body h1 {
+    font-size: 18px;
+  }
+
+  .card-body p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .card-body h3 {
+    font-size: 12px;
+  }
+
+  .price {
+    margin-top: 2vw;
+  }
+
+  .card-body .gold {
+    font-size: 20px;
+  }
+  .regroup {
+    margin-top: 2vh;
+  }
+  .get-now {
+    height: 5.4vw;
+  }
+  .col-price {
+    width: 5vw;
+  }
+  .col-price h1 {
+    margin-top: 1.5vh;
+    font-size: 15px;
+  }
+  .get-now h3 {
+    margin-top: 1vh;
+    font-size: 16px;
+  }
+  /* TICKET RESPONSIVE */
 }
 
 @media only screen and (min-width: 1024px) {
