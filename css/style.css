@@ -456,7 +456,6 @@ a:active {
 
 /* Card Part Dedi */
 
-
 .card-container {
   margin-top: 5vh;
   margin-left: 5vw;
@@ -469,8 +468,6 @@ a:active {
 .card-body {
   padding: 2vw 3vw;
   width: 30vw;
-
-
 }
 
 .card-body h1 {
@@ -489,7 +486,6 @@ a:active {
 .price {
   margin-top: 2vw;
 }
-
 
 .regroup {
   width: 20vw;
@@ -526,7 +522,6 @@ a:active {
 .get-now:hover {
   background-color: orange;
 }
-
 
 /* Card Finished */
 
@@ -689,7 +684,7 @@ a:active {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width: 3440px) {
   .second-section {
     width: 100vw;
     height: 90vh;
@@ -702,7 +697,7 @@ a:active {
     height: 100%;
     color: white;
     font-family: "Staatliches";
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     transition: 0.3s;
   }
@@ -715,7 +710,7 @@ a:active {
   .flex-content {
     display: flex;
     width: 84vw; /* 84vw after padding */
-    height: 35vh; /* 50vw after padding */
+    height: 40vh; /* 50vw after padding */
     background-color: #faf3e3;
     padding: 5vh 8vw;
   }
@@ -751,8 +746,8 @@ a:active {
   }
 
   .desc-kiri {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 30px;
     font-size: 20px;
   }
 
@@ -770,7 +765,7 @@ a:active {
   }
 
   .event-list {
-    margin-top: 3vh;
+    margin-top: 12vh;
   }
 }
 
@@ -778,7 +773,6 @@ a:active {
   color: #eeee;
   font-size: 30px;
 }
-
 
 .card-body-1 {
   padding: 2vw 3vw;
@@ -791,9 +785,8 @@ a:active {
   font-size: 30px;
 }
 
-
 .card-body-1 p {
-  margin-top: 2vw ;
+  margin-top: 2vw;
   text-align: center;
 }
 
@@ -802,10 +795,10 @@ a:active {
 }
 
 .get-now-1 {
-  width: 10vw; 
+  width: 10vw;
   height: 4.5vw;
   border-radius: 0px 5px 5px 0px;
-  background-color: #F2D1D1;
+  background-color: #f2d1d1;
   text-align: center;
 }
 
@@ -830,9 +823,8 @@ a:active {
   font-size: 30px;
 }
 
-
 .card-body-2 p {
-  margin-top: 2vw ;
+  margin-top: 2vw;
   text-align: center;
 }
 
@@ -841,10 +833,10 @@ a:active {
 }
 
 .get-now-2 {
-  width: 10vw; 
+  width: 10vw;
   height: 4.5vw;
   border-radius: 0px 5px 5px 0px;
-  background-color: #F2D1D1;
+  background-color: #f2d1d1;
   text-align: center;
 }
 
@@ -858,4 +850,3 @@ a:active {
   background-color: orange;
 }
 /* Card Finished */
-
