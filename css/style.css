@@ -146,6 +146,10 @@ a:active {
   padding: 24px;
 }
 
+.event-list .description {
+  font-size: 15px;
+}
+
 .event-list h1 {
   text-align: center;
 }
