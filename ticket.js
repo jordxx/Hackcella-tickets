@@ -1,5 +1,10 @@
 let result = JSON.parse(localStorage.getItem('final'))
-
+function toRupiah(numb) {
+    const format = numb.toString().split('').reverse().join('');
+    const convert = format.match(/\d{1,3}/g);
+    const rupiah = 'Rp ' + convert.join('.').split('').reverse().join('')
+    return rupiah
+}
 let resultFix = [
     {
         name: result[0]['name'],
@@ -12,6 +17,7 @@ let resultFix = [
         ]
     }
 ]
+console.log(resultFix[0].tipe[0], "ini result fix")
 
 const nama = document.getElementsByClassName('name');
 const tanggal = document.getElementsByClassName('date');
@@ -45,7 +51,7 @@ for (const a of resultFix) {
     }
     for (let i = 0; i < harga.length; i++) {
         const element = harga[i];
-        element.innerText = price[i]
+        element.innerText = toRupiah(price[i])
     }
 }
 
@@ -54,37 +60,37 @@ let numberVVIP = 0;
 button1.onclick = function () { myFunction1() };
 function myFunction1() {
     numberVVIP++;
-    totalPrice += Number(harga[0].innerText)
+    totalPrice += Number(resultFix[0].tipe[0])
     console.log(numberVVIP, totalPrice, 'ini VVIP');
-    let showVVIP = document.getElementsByClassName('jumlahTiketVVIP')[0] ;
-    showVVIP.innerText = numberVVIP + " Tiket" ;
-    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
+    let showVVIP = document.getElementsByClassName('jumlahTiketVVIP')[0];
+    showVVIP.innerText = "VVIP " + numberVVIP + " Tiket";
+    document.getElementsByClassName('totalPrice')[0].innerText = toRupiah(totalPrice);
 }
 let numberVIP = 0;
 button2.onclick = function () { myFunction2() };
 function myFunction2() {
     numberVIP++;
-    totalPrice += Number(harga[1].innerText)
+    totalPrice += Number(resultFix[0].tipe[1])
     console.log(numberVIP, totalPrice, 'ini VIP');
-    let showVIP = document.getElementsByClassName('jumlahTiketVIP')[0] ;
-    showVIP.innerText = numberVIP + " Tiket"
-    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
+    let showVIP = document.getElementsByClassName('jumlahTiketVIP')[0];
+    showVIP.innerText = "VIP " + numberVIP + " Tiket"
+    document.getElementsByClassName('totalPrice')[0].innerText = toRupiah(totalPrice);
 
 }
 let numberReg = 0;
 button3.onclick = function () { myFunction3() };
 function myFunction3() {
     numberReg++;
-    totalPrice += Number(harga[2].innerText)
+    totalPrice += Number(resultFix[0].tipe[2])
     console.log(numberReg, totalPrice, 'ini Reg');
-    let showReg = document.getElementsByClassName('jumlahTiketReg')[0] ;
-    showReg.innerText = numberReg + " Tiket"
-    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
+    let showReg = document.getElementsByClassName('jumlahTiketReg')[0];
+    showReg.innerText = "Regular " + numberReg + " Tiket"
+    document.getElementsByClassName('totalPrice')[0].innerText = toRupiah(totalPrice);
 }
 
 
 
-
+toRupiah(totalPrice)
 
 
 
