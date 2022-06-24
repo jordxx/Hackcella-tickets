@@ -77,18 +77,19 @@ function displayListConcert(obj) {
         //
         const divGrid3 = document.createElement('div')
         divGrid3.classList.add('grid-item')
+        // divGrid3.setAttribute('id', varButton[counter])
         const divTest = document.createElement('div')
         divTest.classList.add('grid-item')
-        divTest.setAttribute('id', varButton[counter])
-        const aHref = document.createElement('A')
         //rencana cadangan -> aHref.setAttribute("href", varTicket[counter])
+        // const aHref = document.createElement('A')
         //yang asli (maunya) -> aHref.setAttribute("href", 'ticket.html')
-        aHref.setAttribute("href", varTicket[counter])
+        // aHref.setAttribute("href", varTicket[counter])
         const buttonTest = document.createElement('button')
         buttonTest.classList.add('button')
+        buttonTest.setAttribute('id', varButton[counter])
         buttonTest.innerHTML = 'find ticket'
-        aHref.appendChild(buttonTest)
-        divTest.append(aHref)
+        // aHref.appendChild(buttonTest)
+        divTest.append(buttonTest)
         divGrid3.append(divTest)
         divContainer.appendChild(divGrid3)
         //
@@ -107,14 +108,15 @@ for (let i = 0; i < counter; i++) {
     const buttonTest = document.getElementById(varButton[i])
     buttonTest.onclick = function () { myFunction1() };
     function myFunction1() {
-        result = []
         result.push(obj[i])
-        console.log(result)
+        alert(obj[i])
+        console.log(localStorage.setItem('final', JSON.stringify(result)))
+        window.location.href = 'ticket.html';
+
     }
 }
+// const final = result
+// console.log(result, "ini final")
+// localStorage.setItem('final', JSON.stringify(result));
 
-const final = result
-
-
-localStorage.setItem('final', JSON.stringify(final)) ;
 // console.log(localStorage) ;
