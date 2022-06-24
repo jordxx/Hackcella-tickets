@@ -54,7 +54,6 @@ for (const a of resultFix) {
         element.innerText = toRupiah(price[i])
     }
 }
-
 let totalPrice = 0
 let numberVVIP = 0;
 button1.onclick = function () { myFunction1() };
@@ -87,10 +86,24 @@ function myFunction3() {
     showReg.innerText = "Regular " + numberReg + " Tiket"
     document.getElementsByClassName('totalPrice')[0].innerText = toRupiah(totalPrice);
 }
-
-
-
 toRupiah(totalPrice)
+
+
+//RESET
+let resetTombol = document.getElementById('resetTombol')
+resetTombol.onclick = function () {
+    totalPrice = 0, numberVVIP = 0, numberVIP = 0, numberReg = 0;
+    document.getElementsByClassName('jumlahTiketVVIP')[0].innerText = "";
+    document.getElementsByClassName('jumlahTiketVIP')[0].innerText = "";
+    document.getElementsByClassName('jumlahTiketReg')[0].innerText = "";
+    document.getElementsByClassName('totalPrice')[0].innerText = "";
+
+}
+//BELI
+let buyTombol = document.getElementById('buyTombol')
+buyTombol.onclick = function () { alert("Terima kasih, total belanjaan anda adalah " + toRupiah(totalPrice)) }
+
+
 
 
 
