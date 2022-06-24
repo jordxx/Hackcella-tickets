@@ -1,61 +1,4 @@
-
-/* {
-    name: ""
-    date: <dd/mm/yyyy>
-    time: <hh:mm>
-    location: <string>
-    desc: <string>
-    tipe:[
-        regular: <price regular>
-        vip:
-        vvip:
-    ]
-} */
-
-/* function 1 = display list concert
-//harus jalan pertama, saat website mulai pertama kali.
-1. dari data listConcert
-2. tampilin name, date, time, location, sama desc
-3. tampilkan dalam bentuk HTML
-
-
-function 2 = display ticket card
-//harus jalan pertama, saat website load find ticket pertama kali.
-1. dari data listConcert
-2. tampilkan tipe, dan harganya
-3. tampilkan dalam bentuk HTML
-
-function 3 = if findticket pressed(listconcert[i].name)
-1. jalankan saat tombol ditekan berarti onClick()
-2. jika sama, maka tampilkan function 2
-3. fungsi utamanya adalah lempar dari landing page -> purchase ticket page
-
-function 4 = total price
-1. jalankan saat tombol "purchase" ditekan onClick() */
-
-/*   //list concert
-   | -----------------------| -----------------|
-   | date |                 |                  |
-   | time, location         | desc             |
-   | -----------------------| -----------------|
-
-   2 kolom, 2 baris
-
-   saat on click
-pindah ke
-ticket concert
-
-    | ----------------------|
-    | tipe                  |
-    | date                  |
-    | location              |
-    | desc                  |
-    | harga                 |
-    | < ----Quantity---->   |
-    5 baris + 1 non data
-
- */
-
+//DATA THAT WILL BE USED
 const obj = [
     {
         name: "Azis Gagap",
@@ -95,19 +38,14 @@ const obj = [
     }
 ]
 
-function callThis() {
-    displayListConcert(obj)
-    // let br = document.createElement('br')
-    // document.body.append(br)
-    // displayTicketConcert()
-}
 
-//skeleton displayListConcert DONE
-//toDo - add class & id if any
-//skeleton displayTicketConcert DONE
 
+
+let counter = 0
+let varButton = []
 function displayListConcert(obj) {
     for (let i of obj) {
+        varButton.push("button" + counter)
         const section = document.getElementsByClassName('event-list')[0]
         const divMain = document.createElement('div')
         divMain.classList.add('card')
@@ -137,20 +75,34 @@ function displayListConcert(obj) {
         //
         const divGrid3 = document.createElement('div')
         divGrid3.classList.add('grid-item')
-        const button = document.createElement('b')
-        button.classList.add('button')
-        button.innerHTML = "find ticket"
-        divGrid3.append(button)
+        const divTest = document.createElement('div')
+        divTest.classList.add('grid-item')
+        divTest.setAttribute('id', varButton[counter])
+        const buttonTest = document.createElement('button')
+        buttonTest.classList.add('button')
+        buttonTest.innerHTML = "Find Ticket"
+        divTest.append(buttonTest)
+        divGrid3.append(divTest)
         divContainer.appendChild(divGrid3)
         //
         divMain.append(divContainer)
         section.append(divMain)
-        // console.log(section)
+        //
+        counter++
     }
 }
-
 displayListConcert(obj)
 
+let result = []
+for (let i = 0; i < counter; i++) {
+    const buttonTest = document.getElementById(varButton[i])
+    buttonTest.onclick = function () { myFunction1() };
+    function myFunction1() {
+        result = []
+        result.push(obj[i])
+        console.log(result)
+    }
+}
 
 
 // function displayTicketConcert() {
