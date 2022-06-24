@@ -56,7 +56,9 @@ function myFunction1() {
     numberVVIP++;
     totalPrice += Number(harga[0].innerText)
     console.log(numberVVIP, totalPrice, 'ini VVIP');
-    resizeTo.onclick
+    let showVVIP = document.getElementsByClassName('jumlahTiketVVIP')[0] ;
+    showVVIP.innerText = numberVVIP + " Tiket" ;
+    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
 }
 let numberVIP = 0;
 button2.onclick = function () { myFunction2() };
@@ -64,6 +66,10 @@ function myFunction2() {
     numberVIP++;
     totalPrice += Number(harga[1].innerText)
     console.log(numberVIP, totalPrice, 'ini VIP');
+    let showVIP = document.getElementsByClassName('jumlahTiketVIP')[0] ;
+    showVIP.innerText = numberVIP + " Tiket"
+    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
+
 }
 let numberReg = 0;
 button3.onclick = function () { myFunction3() };
@@ -71,7 +77,18 @@ function myFunction3() {
     numberReg++;
     totalPrice += Number(harga[2].innerText)
     console.log(numberReg, totalPrice, 'ini Reg');
+    let showReg = document.getElementsByClassName('jumlahTiketReg')[0] ;
+    showReg.innerText = numberReg + " Tiket"
+    document.getElementsByClassName('totalPrice')[0].innerText = totalPrice ;
 }
+
+
+
+
+
+
+
+
 
 
 
