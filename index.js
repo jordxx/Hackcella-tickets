@@ -116,4 +116,5 @@ for (let i = 0; i < counter; i++) {
 const final = result
 
 
-
+localStorage.setItem('final', JSON.stringify(final)) ;
+// console.log(localStorage) ;
