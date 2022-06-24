@@ -109,10 +109,10 @@ for (let i = 0; i < counter; i++) {
     buttonTest.onclick = function () { myFunction1() };
     function myFunction1() {
         result.push(obj[i])
-        alert(obj[i])
-        console.log(localStorage.setItem('final', JSON.stringify(result)))
+        // alert(obj[i])
+        // console.log(localStorage.setItem('final', JSON.stringify(result)))
+        localStorage.setItem('final', JSON.stringify(result)) ;
         window.location.href = 'ticket.html';
-
     }
 }
 // const final = result
