@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap" rel="stylesheet">
     <title>Ticketing.com</title>
     <link rel="stylesheet" href="./css/style.css"/>
@@ -78,20 +79,36 @@
         </div>
     </div>
     </section>
-    <section class="final-price">
-       <div class="jumlahTiketVVIP">
-       </div>
-      <div class="jumlahTiketVIP">
-        
-      </div>
-      <div class="jumlahTiketReg">
-        
-      </div>
-      <div class="totalPrice">
-        
-      </div>
 
-    </section>
+    <section class="final-price">
+      <table>
+  <tr>
+    <th style="width:50%">Tickets</th>
+    <th>Basic</th>
+    <th></th>
+    <th>Total</th>
+
+  </tr>
+  <tr>
+    <td>VVIP</td>
+    <td><div class="jumlahTiketVVIP"></div></td>
+  </tr>
+  <tr>
+    <td>VIP</td>
+    <td><div class="jumlahTiketVIP"></div></td>
+  </tr>
+  <tr>
+    <td>Reguler</td>
+    <td><div class="jumlahTiketReg"></div></td>
+    <td></td>
+    <td><div class="totalPrice"></div></td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td><button type="button" class="button button3" id="resetTombol">RESET</button></td>
+    <td><button type="button" class="button button1" id="buyTombol">BUY</button></td>
+  </tr>
+</table>
 <script src="ticket.js"></script>
 
 </body>
