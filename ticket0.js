@@ -8,6 +8,8 @@ const button1 = document.getElementById('button1') ;
 const button2 = document.getElementById('button2') ;
 const button3 = document.getElementById('button3') ;
 
+let x = JSON.parse(localStorage.getItem('final'))
+console.log(x);
 const obj = [
     {
         name: "Azis Gagap",
@@ -58,7 +60,7 @@ let resultFix = [
         ]
     }
 ]
-console.log(resultFix);
+// console.log(resultFix);
 
 let price = resultFix[0]['tipe'] ;
 for (const a of resultFix) {

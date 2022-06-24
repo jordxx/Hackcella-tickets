@@ -1,5 +1,17 @@
-let resultFix = JSON.parse(localStorage.getItem('final'))
-console.log(resultFix[0]);
+let result = JSON.parse(localStorage.getItem('final'))
+
+let resultFix = [
+    {
+        name: result[0]['name'],
+        date: result[0]['date'],
+        time: result[0]['time'],
+        location: result[0]['location'],
+        desc: result[0]['desc'],
+        tipe: [
+            result[0]['tipe']['vvip'], result[0]['tipe']['vip'], result[0]['tipe']['regular']
+        ]
+    }
+]
 
 const nama = document.getElementsByClassName('name');
 const tanggal = document.getElementsByClassName('date');
@@ -13,6 +25,7 @@ const button3 = document.getElementById('button3');
 
 
 let price = resultFix[0]['tipe'];
+console.log(resultFix);
 for (const a of resultFix) {
     for (let i = 0; i < nama.length; i++) {
         const element = nama[i];
@@ -35,28 +48,7 @@ for (const a of resultFix) {
         element.innerText = price[i]
     }
 }
-// let price = objKecil['tipe'] ;
-// console.log(price.length);
-// for (let i = 0; i < nama.length; i++) {
-//     const element = nama[i];
-//     element.firstChild.textContent = objKecil.name
-// }
-// for (let i = 0; i < tanggal.length; i++) {
-//     const element = tanggal[i];
-//     element.textContent = objKecil.date
-// }
-// for (let i = 0; i < lok.length; i++) {
-//     const element = lok[i];
-//     element.textContent = objKecil.location
-// }
-// for (let i = 0; i < desc.length; i++) {
-//     const element = desc[i];
-//     element.innerText = objKecil['desc']
-// }
-// for (let i = 0; i < harga.length; i++) {
-//     const element = harga[i];
-//     element.innerText = price[i]
-// }
+
 let totalPrice = 0
 let numberVVIP = 0;
 button1.onclick = function () { myFunction1() };
