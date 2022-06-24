@@ -38,15 +38,17 @@ const obj = [
     }
 ]
 
-
-
-
+//DISPLAY LIST CONCERT @index.html
 let counter = 0
 let varButton = []
+let varTicket = []
+
 function displayListConcert(obj) {
+    if (!obj) return null;
+    const section = document.getElementsByClassName('event-list')[0]
     for (let i of obj) {
         varButton.push("button" + counter)
-        const section = document.getElementsByClassName('event-list')[0]
+        varTicket.push("ticket" + counter + '.html')
         const divMain = document.createElement('div')
         divMain.classList.add('card')
         const divContainer = document.createElement('div')
@@ -78,10 +80,15 @@ function displayListConcert(obj) {
         const divTest = document.createElement('div')
         divTest.classList.add('grid-item')
         divTest.setAttribute('id', varButton[counter])
+        const aHref = document.createElement('A')
+        //rencana cadangan -> aHref.setAttribute("href", varTicket[counter])
+        //yang asli (maunya) -> aHref.setAttribute("href", 'ticket.html')
+        aHref.setAttribute("href", varTicket[counter])
         const buttonTest = document.createElement('button')
         buttonTest.classList.add('button')
-        buttonTest.innerHTML = "Find Ticket"
-        divTest.append(buttonTest)
+        buttonTest.innerHTML = 'find ticket'
+        aHref.appendChild(buttonTest)
+        divTest.append(aHref)
         divGrid3.append(divTest)
         divContainer.appendChild(divGrid3)
         //
@@ -91,8 +98,10 @@ function displayListConcert(obj) {
         counter++
     }
 }
+
 displayListConcert(obj)
 
+//"FUNCTION" BUTTON @index.html
 let result = []
 for (let i = 0; i < counter; i++) {
     const buttonTest = document.getElementById(varButton[i])
@@ -104,64 +113,7 @@ for (let i = 0; i < counter; i++) {
     }
 }
 
+const final = result
 
-// function displayTicketConcert() {
-//     let obj = {
-//         name: "Azis Gagap",
-//         date: "01/01/2001",
-//         time: "17.00",
-//         location: "Jakarta",
-//         desc: "lorem ipsum",
-//         tipe: {
-//             regular: 100000,
-//             vip: 200000,
-//             vvip: 300000,
-//         }
-//     }
-//     let tipe = obj.tipe
-//     for (let i in tipe) {
-//         const div1 = document.createElement('div');
-//         const table1 = document.createElement('table');
 
-//         const td1 = document.createElement('td');
-//         const text = document.createTextNode(i);
-//         const tr1 = document.createElement('tr');
-//         td1.appendChild(text);
-//         tr1.appendChild(td1);
-
-//         const td2 = document.createElement('td');
-//         const text2 = document.createTextNode(obj.date);
-//         const tr2 = document.createElement('tr');
-//         td2.appendChild(text2);
-//         tr2.appendChild(td2);
-
-//         const td3 = document.createElement('td');
-//         const text3 = document.createTextNode(obj.location);
-//         const tr3 = document.createElement('tr');
-//         td3.appendChild(text3);
-//         tr3.appendChild(td3);
-
-//         const td4 = document.createElement('td');
-//         const text4 = document.createTextNode(obj.desc);
-//         const tr4 = document.createElement('tr');
-//         td4.appendChild(text4);
-//         tr4.appendChild(td4);
-
-//         const td5 = document.createElement('td');
-//         const text5 = document.createTextNode(i.harga);
-//         const tr5 = document.createElement('tr');
-//         td5.appendChild(text5);
-//         tr5.appendChild(td5);
-
-//         const td6 = document.createElement('td');
-//         const text6 = document.createTextNode("quantity");
-//         const tr6 = document.createElement('tr');
-//         td6.appendChild(text6);
-//         tr6.appendChild(td6);
-
-//         table1.append(tr1, tr2, tr3, tr4, tr5, tr6);
-//         div1.appendChild(table1);
-//         document.body.appendChild(div1);
-//     }
-// }
 
